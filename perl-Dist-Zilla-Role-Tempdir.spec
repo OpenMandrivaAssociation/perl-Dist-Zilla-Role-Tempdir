@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Role-Tempdir
-%define upstream_version 0.01000003
+%define upstream_version 0.01022319
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -21,6 +21,7 @@ BuildRequires: perl(File::chdir)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Path::Class)
 BuildRequires: perl(namespace::autoclean)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -31,16 +32,15 @@ no description found
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%{__perl} Build.PL installdirs=vendor
+./Build
 
 %check
-%{make} test
+./Build test
 
 %install
-rm -rf %buildroot
-%makeinstall_std
+%{__rm} -rf %{buildroot}
+./Build install destdir=%{buildroot}
 
 %clean
 rm -rf %buildroot
