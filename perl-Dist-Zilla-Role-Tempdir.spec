@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Role-Tempdir
-%define upstream_version 0.01022319
+%define upstream_version 0.01027622
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
