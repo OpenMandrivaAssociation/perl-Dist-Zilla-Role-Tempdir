@@ -20,6 +20,7 @@ BuildRequires: perl(File::Tempdir)
 BuildRequires: perl(File::chdir)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Path::Class)
+BuildRequires: perl(Module::Build)
 BuildRequires: perl(namespace::autoclean)
 
 BuildArch: noarch
