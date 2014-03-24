@@ -1,9 +1,9 @@
 %define upstream_name    Dist-Zilla-Role-Tempdir
-%define upstream_version 0.01027622
+%define upstream_version 0.01053722
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Shell Out and collect the result in a DZ plug-in
 License:	GPL+ or Artistic
@@ -46,4 +46,5 @@ perl Build.PL installdirs=vendor
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
