@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Role-Tempdir
-%define upstream_version 0.01053722
+%define upstream_version 1.000000
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -46,5 +46,3 @@ perl Build.PL installdirs=vendor
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-

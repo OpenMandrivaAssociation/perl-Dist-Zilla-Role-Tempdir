@@ -1,4 +1,5 @@
 removed_sources:
   Dist-Zilla-Role-Tempdir-0.01027622.tar.gz: 705db8d2270bf655cd0fc87fb18e579dbeeceea9
-sources:
   Dist-Zilla-Role-Tempdir-0.01053722.tar.gz: 6df25c4693bcdd2b66b635d11bd8046c0c4ebde2
+sources:
+  Dist-Zilla-Role-Tempdir-1.000000.tar.gz: 05282e9c417427579c11e2c9c837960217d62a38
