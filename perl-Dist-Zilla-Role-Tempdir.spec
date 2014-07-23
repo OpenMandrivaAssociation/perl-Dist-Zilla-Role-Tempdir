@@ -33,14 +33,14 @@ Shell Out and collect the result in a DZ plug-in.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-perl Build.PL installdirs=vendor
-./Build
+perl Makefile.PL INSTALLDIRS=vendor
+%make
 
 %check
-#./Build test
+#%make test
 
 %install
-./Build install destdir=%{buildroot}
+%makeinstall_std
 
 %files
 %doc Changes LICENSE README
