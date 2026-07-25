@@ -1,15 +1,15 @@
 %define upstream_name    Dist-Zilla-Role-Tempdir
-%define upstream_version 0.01053722
+%define upstream_version 1.001003
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Shell Out and collect the result in a DZ plug-in
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/kentnl/Dist-Zilla-Role-Tempdir
+Source0:	https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Dist-Zilla-Role-Tempdir-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Digest::SHA)
